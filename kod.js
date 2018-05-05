@@ -19,7 +19,7 @@ function getArtist() {
 function loadPage(artist) {
 
     localStorage.setItem('name', artist);
-    window.location.href = 'albumi.html';
+    window.location.href = 'http://htmlpreview.github.io/?https://github.com/VladicaMaster/Rock-Artist/blob/master/albumi.html';
 }
 
 function getAlbums()
