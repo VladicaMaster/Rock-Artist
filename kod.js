@@ -186,7 +186,7 @@ function tracks(obj, album)
     for (var i = 0; i < obj.album.tracks.track.length; i++
         ) {
         var li = document.createElement("LI");
-        li.innerHTML = '<a href="' + obj.album.tracks.track[i].url + '" target="_blank">' + obj.album.tracks.track[i].name + '</a>';
+        li.innerHTML = '<a href="' + obj.album.tracks.track[i].url + '"target="_blank">'+obj.album.tracks.track[i].name + '</a>';
         ol.appendChild(li);
     }
       album.appendChild(ol);
