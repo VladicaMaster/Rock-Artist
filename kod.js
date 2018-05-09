@@ -206,14 +206,17 @@ function truncate(txt) {
 
 function search()
 {
+
+     var x = document.getElementsByClassName("found");
+    for (var j = 0; j < x.length; j++) {
+        x[j].className = "album";
+    }
+    
     var input = document.getElementById("input").value;
     var albums = document.querySelectorAll(".album");
 
     // Brisemo trenutno found polje
-    var x = document.getElementsByClassName("found");
-    for (var j = 0; j < x.length; j++) {
-        x[j].className = "album";
-    }
+   
 
     for (var i = 0; i < objAlbum.length; i++) {
         if (input == objAlbum[i].name) {
